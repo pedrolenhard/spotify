@@ -1,0 +1,53 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify Audio Features</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Spotify Audio Features
+      </h1>
+      <p>
+        Learn more about the audio properties of your favourite tracks, from "danceability" to "energy" to "acousticness".
+      </p>
+      <p>
+      </p>
+    </header>
+
+    <main>
+      <h4>Let's search for a track:</h4>
+      <form>
+        <input type="text" maxlength="100" placeholder="Track Name">
+        <button class="btn btn-sm btn-aubergine" type="submit">Submit</button>
+      </form>
+      <section class="features">
+        <ul id="results">
+        </ul>
+        <div id="features-chart-container">
+          <canvas id="features-chart" width="400" height="200"></canvas>
+        </div>
+      </section>
+    </main>
+
+  
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
